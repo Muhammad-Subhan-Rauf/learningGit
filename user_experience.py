@@ -17,7 +17,9 @@ def choose_difficulty():
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    ch = input("Choose a difficulty: ").lower()
+    return ch
+
     #------------------------
 
 #---------------------------------------
@@ -36,6 +38,8 @@ def display_leaderboard(leaderboard):
     #------------------------
     # Add your code here
     #------------------------
+    
+
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
