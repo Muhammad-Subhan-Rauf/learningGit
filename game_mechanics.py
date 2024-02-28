@@ -71,7 +71,9 @@ def game_over_message(final_score):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print("GAME OVER")
+    print("Your final score was",final_score)
+    
     #------------------------
 
 #---------------------------------------
