@@ -133,7 +133,11 @@ def fifty_fifty_lifeline(correct_answer, options):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    import random
+    options.remove(correct_answer)
+    return [correct_answer,random.choice(options)]
+
+
     #------------------------
 
 #---------------------------------------
