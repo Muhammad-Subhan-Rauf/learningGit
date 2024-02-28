@@ -90,7 +90,7 @@ def run_game_rounds(categories):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    pass
     #------------------------
 
 #---------------------------------------
@@ -109,7 +109,10 @@ def validate_answer(player_answer, correct_answer):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    if player_answer.lower() == correct_answer.lower():
+        return True
+    return False
+
     #------------------------
 
 #---------------------------------------
@@ -128,7 +131,9 @@ def update_score(score, correct):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    if correct:
+        return score+5
+    
     #------------------------
 
 #---------------------------------------
