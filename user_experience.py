@@ -38,8 +38,9 @@ def display_leaderboard(leaderboard):
     #------------------------
     # Add your code here
     #------------------------
-    
-
+    sorted_dict = dict(sorted(leaderboard.items(), key=lambda item: item[1]))
+    for i in sorted_dict:
+        print(f"{i} Scored {sorted_dict[i]}")
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
