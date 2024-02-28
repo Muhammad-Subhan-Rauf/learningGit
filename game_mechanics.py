@@ -31,9 +31,13 @@ def choose_category(categories):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
-    #------------------------
+    for i in categories:
+        print(i)
+    ch = input("Choose a category:  ")
+    if ch in categories:
+        return ch
 
+    #------------------------
 #---------------------------------------
 
 def display_score(score, round_number):
