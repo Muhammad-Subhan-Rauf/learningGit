@@ -80,7 +80,15 @@ def load_top_scores(file_path='scores.txt'):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    with open(file_path,"r+") as file:
+        f = file.readlines()
+        lst = {}
+        for i in f:
+            x = i.rstrip("\n")
+            z = x.split(":")
+            lst[z[0]] = z[1]
+        return lst
+
     #------------------------
 
 #---------------------------------------
@@ -101,7 +109,10 @@ def provide_feedback(is_correct):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    if is_correct:
+        print("WELL DONE")
+    else:
+        print("Sorry that is incorrect")
     #------------------------
 
 #---------------------------------------
