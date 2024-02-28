@@ -53,7 +53,8 @@ def display_score(score, round_number):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print("Round: ",round_number)
+    print("Score: ",score)
     #------------------------
 
 #---------------------------------------
