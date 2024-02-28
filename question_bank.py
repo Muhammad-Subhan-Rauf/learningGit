@@ -8,19 +8,41 @@ import random
 # Simplified example with one category. Expand as needed.
 questions = {
     "Science": [
-        ("What is the chemical symbol for water?", "H2O"),
-        # Add more questions as tuples (question, answer)
-    ],
-}
+        ("What is the scientific name for the process of plants making their own food?", "Photosynthesis"),
+        ("What is the unit of measurement for electrical resistance?", "Ohm"),
+        ("Which gas do plants absorb during photosynthesis?", "Carbon dioxide"),
+        ("What is the study of the earth's physical structure and substance called?", "Geology"),
+        ("What is the name of the smallest unit of matter?", "Atom"),
+        ],
+    "History": [
+        ("Who was the first President of the United States?", "George Washington"),
+        ("Which ancient civilization built the pyramids at Giza?", "Ancient Egyptians"),
+        ("What was the main cause of the French Revolution?", "Social inequality and economic hardship"),
+        ("Who wrote the 'The Communist Manifesto'?", "Karl Marx and Friedrich Engels"),
+        ("What year did World War I begin?", "1914"),
+        ]
+    }
+
 
 hints = {
     "Science": [
-        # Pair each question with a corresponding hint.
-    ],
-    # Repeat for other categories as needed.
+        ("Hint: This process involves plants using sunlight to produce their own food.", "Photosynthesis"),
+        ("Hint: Named after the German physicist who formulated Ohm's Law.", "Ohm"),
+        ("Hint: Humans exhale this gas, which plants absorb to produce oxygen.", "Carbon dioxide"),
+        ("Hint: This field of science studies rocks, minerals, and the Earth's structure.", "Geology"),
+        ("Hint: These are the building blocks of all matter.", "Atom"),
+        ],
+    "History": [
+        ("Hint: He is often referred to as the 'Father of His Country'.", "George Washington"),
+        ("Hint: This civilization flourished along the banks of the Nile River.", "Ancient Egyptians"),
+        ("Hint: This revolution was fueled by the ideals of liberty, equality, and fraternity.", "French Revolution"),
+        ("Hint: This influential political pamphlet advocates for a classless society.", "The Communist Manifesto"),
+        ("Hint: It's the year when the assassination of Archduke Franz Ferdinand triggered the war.", "1914"),
+        ]
 }
 
 #---------------------------------------
+import random
 
 def select_random_question(category):
     """
@@ -35,7 +57,8 @@ def select_random_question(category):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    return random.choice(questions[category])
+    
     #------------------------
 
 #---------------------------------------
@@ -54,7 +77,9 @@ def check_answer(player_answer, correct_answer):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    if player_answer == correct_answer:
+        return True
+    return False
     #------------------------
 
 #---------------------------------------
@@ -73,7 +98,10 @@ def remove_question(category, question):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    for i in questions[category]:
+        if i[0] == question:
+            questions[category].remove(question)
+        
     #------------------------
 
 #---------------------------------------
