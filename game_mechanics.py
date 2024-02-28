@@ -151,7 +151,7 @@ def next_round(round_number):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    return round_number+1
     #------------------------
 
 #---------------------------------------
@@ -169,7 +169,10 @@ def check_game_over(incorrect_answers):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    if incorrect_answers>=3:
+        return True
+    return False
+
     #------------------------
 
 #---------------------------------------
@@ -184,7 +187,7 @@ def restart_or_exit():
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    pass
     #------------------------
 
 #---------------------------------------
