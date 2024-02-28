@@ -41,7 +41,7 @@ def display_leaderboard(leaderboard):
     sorted_dict = dict(sorted(leaderboard.items(), key=lambda item: item[1]))
     for i in sorted_dict:
         print(f"{i} Scored {sorted_dict[i]}")
-    raise NotImplementedError("This function is not implemented yet.")
+    
     #------------------------
 
 #---------------------------------------
@@ -60,7 +60,9 @@ def save_score(player_name, score, file_path='scores.txt'):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    with open(file_path,"w+") as file:
+        file.write(f"{player_name}:{score}\n")
+
     #------------------------
 
 #---------------------------------------
