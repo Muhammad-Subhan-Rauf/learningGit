@@ -150,7 +150,7 @@ def provide_hint(category, question):
         if i[1] == question:
             return i[0]
         
-    
+    return False
     #------------------------
 
 #---------------------------------------
@@ -168,7 +168,7 @@ def display_correct_answer(correct_answer):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print(correct_answer)
     #------------------------
 
 #---------------------------------------
