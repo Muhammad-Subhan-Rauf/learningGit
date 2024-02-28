@@ -119,7 +119,15 @@ def display_question_and_accept_answer(question):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print(question)
+    ch = input("Enter your Answer:  ")
+    return ch
+
+    # for i in questions:
+    #     for j in questions[i]:
+    #         if j[0] == question:
+    #             answer = 
+
     #------------------------
 
 #---------------------------------------
