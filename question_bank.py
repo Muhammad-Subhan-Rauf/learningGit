@@ -26,18 +26,18 @@ questions = {
 
 hints = {
     "Science": [
-        ("Hint: This process involves plants using sunlight to produce their own food.", "Photosynthesis"),
-        ("Hint: Named after the German physicist who formulated Ohm's Law.", "Ohm"),
-        ("Hint: Humans exhale this gas, which plants absorb to produce oxygen.", "Carbon dioxide"),
-        ("Hint: This field of science studies rocks, minerals, and the Earth's structure.", "Geology"),
-        ("Hint: These are the building blocks of all matter.", "Atom"),
+        ("Hint: This process involves plants using sunlight to produce their own food.", "What is the scientific name for the process of plants making their own food?"),
+        ("Hint: Named after the German physicist who formulated Ohm's Law.", "What is the unit of measurement for electrical resistance?"),
+        ("Hint: Humans exhale this gas, which plants absorb to produce oxygen.", "Which gas do plants absorb during photosynthesis?"),
+        ("Hint: This field of science studies rocks, minerals, and the Earth's structure.", "What is the study of the earth's physical structure and substance called?"),
+        ("Hint: These are the building blocks of all matter.", "What is the name of the smallest unit of matter?"),
         ],
     "History": [
-        ("Hint: He is often referred to as the 'Father of His Country'.", "George Washington"),
-        ("Hint: This civilization flourished along the banks of the Nile River.", "Ancient Egyptians"),
-        ("Hint: This revolution was fueled by the ideals of liberty, equality, and fraternity.", "French Revolution"),
-        ("Hint: This influential political pamphlet advocates for a classless society.", "The Communist Manifesto"),
-        ("Hint: It's the year when the assassination of Archduke Franz Ferdinand triggered the war.", "1914"),
+        ("Hint: He is often referred to as the 'Father of His Country'.", "Who was the first President of the United States?"),
+        ("Hint: This civilization flourished along the banks of the Nile River.", "Which ancient civilization built the pyramids at Giza?"),
+        ("Hint: This revolution was fueled by the ideals of liberty, equality, and fraternity.", "What was the main cause of the French Revolution?"),
+        ("Hint: This influential political pamphlet advocates for a classless society.", "Who wrote the 'The Communist Manifesto'?"),
+        ("Hint: It's the year when the assassination of Archduke Franz Ferdinand triggered the war.", "What year did World War I begin?"),
         ]
 }
 
@@ -146,7 +146,11 @@ def provide_hint(category, question):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    for i in hints[category]:
+        if i[1] == question:
+            return i[0]
+        
+    
     #------------------------
 
 #---------------------------------------
